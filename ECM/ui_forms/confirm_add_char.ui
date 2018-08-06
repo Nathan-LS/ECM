@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>confirm_add_char</class>
+    <widget class="QDialog" name="confirm_add_char">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>639</width>
+                <height>260</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>639</width>
+                <height>260</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>698</width>
+                <height>348</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Dialog</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+                <widget class="QFrame" name="frame">
+                    <property name="minimumSize">
+                        <size>
+                            <width>521</width>
+                            <height>158</height>
+                        </size>
+                    </property>
+                    <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                    </property>
+                    <property name="lineWidth">
+                        <number>3</number>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                        <item>
+                            <widget class="QLabel" name="pilot_image">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>128</width>
+                                        <height>128</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>128</width>
+                                        <height>128</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="corp_image">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>128</width>
+                                        <height>128</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>128</width>
+                                        <height>128</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string notr="true"/>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="pilot_name">
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>281</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="font">
+                                    <font>
+                                        <family>Sylfaen</family>
+                                        <pointsize>31</pointsize>
+                                        <weight>75</weight>
+                                        <bold>true</bold>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>pilot_name</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            <item>
+                <widget class="Line" name="line">
+                    <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="QLabel" name="label_3">
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Add this character? If the character already exists in the application this will simply
+                            refresh the SSO token.
+                        </string>
+                    </property>
+                    <property name="wordWrap">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <widget class="Line" name="line_2">
+                    <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                    </property>
+                </widget>
+            </item>
+            <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                        <widget class="QPushButton" name="cancel_button">
+                            <property name="minimumSize">
+                                <size>
+                                    <width>131</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>131</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>Cancel</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="confirm_add_button">
+                            <property name="minimumSize">
+                                <size>
+                                    <width>131</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>131</width>
+                                    <height>31</height>
+                                </size>
+                            </property>
+                            <property name="text">
+                                <string>Add</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+        </layout>
+    </widget>
+    <tabstops>
+        <tabstop>confirm_add_button</tabstop>
+        <tabstop>cancel_button</tabstop>
+    </tabstops>
+    <resources/>
+    <connections/>
+</ui>

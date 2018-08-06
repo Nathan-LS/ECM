@@ -1,0 +1,16 @@
+from database.tables.scopes import Scopes as tb_scopes
+from database.tables.settings import Settings as tb_settings
+from database.tables.alliances import Alliances as tb_alliances
+from database.tables.corporations import Corporations as tb_corporations
+from database.tables.characters import Characters as tb_characters
+from database.tables.token_scopes import Token_scopes as tb_token_scopes
+from database.tables.tokens import Tokens as tb_tokens
+from database.tables.logs import log as tb_logs
+from database.tables.char_attributes import Char_attributes as tb_attributes
+from database.tables.char_fatigue import Char_fatigue as tb_fatigue
+from database.tables.regions import Regions as tb_regions
+from database.tables.constellations import Constellations as tb_constellations
+from database.tables.systems import Systems as tb_systems
+from database.tables.char_location import Char_location as tb_locations
+from database.tables.char_skills import Char_skills_info as tb_skills_info
+from database.tables.char_fleet import Char_fleet as tb_fleet

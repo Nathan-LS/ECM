@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'confirm_add_char.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_confirm_add_char(object):
+    def setupUi(self, confirm_add_char):
+        confirm_add_char.setObjectName("confirm_add_char")
+        confirm_add_char.resize(639, 260)
+        confirm_add_char.setMinimumSize(QtCore.QSize(639, 260))
+        confirm_add_char.setMaximumSize(QtCore.QSize(698, 348))
+        self.verticalLayout = QtWidgets.QVBoxLayout(confirm_add_char)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(confirm_add_char)
+        self.frame.setMinimumSize(QtCore.QSize(521, 158))
+        self.frame.setFrameShape(QtWidgets.QFrame.Box)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setLineWidth(3)
+        self.frame.setObjectName("frame")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frame)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.pilot_image = QtWidgets.QLabel(self.frame)
+        self.pilot_image.setMinimumSize(QtCore.QSize(128, 128))
+        self.pilot_image.setMaximumSize(QtCore.QSize(128, 128))
+        self.pilot_image.setText("")
+        self.pilot_image.setScaledContents(True)
+        self.pilot_image.setObjectName("pilot_image")
+        self.horizontalLayout.addWidget(self.pilot_image)
+        self.corp_image = QtWidgets.QLabel(self.frame)
+        self.corp_image.setMinimumSize(QtCore.QSize(128, 128))
+        self.corp_image.setMaximumSize(QtCore.QSize(128, 128))
+        self.corp_image.setText("")
+        self.corp_image.setScaledContents(True)
+        self.corp_image.setObjectName("corp_image")
+        self.horizontalLayout.addWidget(self.corp_image)
+        self.pilot_name = QtWidgets.QLabel(self.frame)
+        self.pilot_name.setMinimumSize(QtCore.QSize(281, 0))
+        font = QtGui.QFont()
+        font.setFamily("Sylfaen")
+        font.setPointSize(31)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pilot_name.setFont(font)
+        self.pilot_name.setAlignment(QtCore.Qt.AlignCenter)
+        self.pilot_name.setObjectName("pilot_name")
+        self.horizontalLayout.addWidget(self.pilot_name)
+        self.verticalLayout.addWidget(self.frame)
+        self.line = QtWidgets.QFrame(confirm_add_char)
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.verticalLayout.addWidget(self.line)
+        self.label_3 = QtWidgets.QLabel(confirm_add_char)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setWordWrap(True)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout.addWidget(self.label_3)
+        self.line_2 = QtWidgets.QFrame(confirm_add_char)
+        self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_2.setObjectName("line_2")
+        self.verticalLayout.addWidget(self.line_2)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.cancel_button = QtWidgets.QPushButton(confirm_add_char)
+        self.cancel_button.setMinimumSize(QtCore.QSize(131, 31))
+        self.cancel_button.setMaximumSize(QtCore.QSize(131, 31))
+        self.cancel_button.setObjectName("cancel_button")
+        self.horizontalLayout_2.addWidget(self.cancel_button)
+        self.confirm_add_button = QtWidgets.QPushButton(confirm_add_char)
+        self.confirm_add_button.setMinimumSize(QtCore.QSize(131, 31))
+        self.confirm_add_button.setMaximumSize(QtCore.QSize(131, 31))
+        self.confirm_add_button.setObjectName("confirm_add_button")
+        self.horizontalLayout_2.addWidget(self.confirm_add_button)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+
+        self.retranslateUi(confirm_add_char)
+        QtCore.QMetaObject.connectSlotsByName(confirm_add_char)
+        confirm_add_char.setTabOrder(self.confirm_add_button, self.cancel_button)
+
+    def retranslateUi(self, confirm_add_char):
+        _translate = QtCore.QCoreApplication.translate
+        confirm_add_char.setWindowTitle(_translate("confirm_add_char", "Dialog"))
+        self.pilot_name.setText(_translate("confirm_add_char", "pilot_name"))
+        self.label_3.setText(_translate("confirm_add_char",
+                                        "Add this character? If the character already exists in the application this will simply refresh the SSO token."))
+        self.cancel_button.setText(_translate("confirm_add_char", "Cancel"))
+        self.confirm_add_button.setText(_translate("confirm_add_char", "Add"))
